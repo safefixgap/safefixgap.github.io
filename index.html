@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The safe-fix gap, a research project by Ian Lowe</title>
+<meta name="description" content="A personal research project on how long security fixes really take, now that AI has made finding flaws cheap. Four questions, about two minutes, anonymous.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{
+  --bg:#fbfaf7; --ink:#1d2321; --muted:#5c6662; --line:#dfe3e0; --accent:#1f5f8b; --panel:#f1f3f2;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root{
+  --bg:#141817; --ink:#e3e8e6; --muted:#9ca8a3; --line:#2c3431; --accent:#7fb6dd; --panel:#1c2220; color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.6}
+main,footer{max-width:680px;margin:0 auto;padding:0 20px}
+header{max-width:680px;margin:0 auto;padding:56px 20px 8px}
+.kicker{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 12px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(32px,6vw,44px);line-height:1.15;margin:0 0 16px;text-wrap:balance}
+h2{font-family:var(--serif);font-weight:600;font-size:24px;margin:48px 0 12px}
+p{margin:0 0 16px}
+.lede{font-size:20px;color:var(--ink)}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.cta{display:inline-block;margin:8px 0 0;padding:12px 20px;background:var(--accent);color:var(--bg);border-radius:6px;text-decoration:none;font-weight:600}
+.form{margin:16px 0 0;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:#fff}
+.form iframe{display:block;width:100%;height:1900px;border:0}
+.placeholder{padding:24px;background:var(--panel);color:var(--muted);font-size:16px}
+ul{padding-left:22px;margin:0 0 16px}
+li{margin-bottom:6px}
+.small{font-size:15px;color:var(--muted)}
+footer{border-top:1px solid var(--line);margin-top:56px;padding-top:20px;padding-bottom:40px}
+</style>
+</head>
+<body>
+<header>
+  <p class="kicker">Research project</p>
+  <h1>The safe-fix gap</h1>
+  <p class="lede">AI has made finding security flaws cheap. It hasn't made fixing them safely any cheaper, and attackers are chasing the same flaws. I'm trying to find out how big that gap really is.</p>
+  <a class="cta" href="#questions">Answer four questions</a>
+</header>
+
+<main>
+  <h2>What I'm asking</h2>
+  <p>If you run or lead security or IT, I'd love two minutes of your time. There are four questions on how long fixes take, how much of that time protects you, and how often fixes have to be redone. Rough answers are fine. "No idea" and "we don't track it" are useful answers too.</p>
+
+  <h2 id="questions">The four questions</h2>
+  <div class="form">
+    <!-- Replace this placeholder with the Google Form embed:
+         <iframe src="https://docs.google.com/forms/d/e/FORM_ID/viewform?embedded=true" title="The safe-fix gap, four questions" loading="lazy"></iframe> -->
+    <div class="placeholder">The form will appear here.</div>
+  </div>
+
+  <h2>How your answers are used</h2>
+  <ul>
+    <li>Answers are anonymous. The form doesn't collect names or email addresses.</li>
+    <li>Everything is reported in aggregate, under the Chatham House Rule. I'll say "of the N who answered", and only give percentages once there are about 30 answers.</li>
+    <li>Background questions use broad bands (sector, size, role), and each one has a "prefer not to say" option.</li>
+    <li>Answers are stored in a Google Sheet that only I can access. Raw answers are deleted when the project ends, and by 31 December 2027 at the latest.</li>
+    <li>Questions, or want your answers removed? Contact me at <a href="mailto:safefixgap.research@gmail.com">safefixgap.research@gmail.com</a>.</li>
+  </ul>
+
+  <h2>Where this is going</h2>
+  <p>I publish the work in dated versions, so you can see how the argument changes as answers come in.</p>
+  <ul>
+    <li><a href="https://www.linkedin.com/pulse/when-constraint-moves-someone-chasing-ian-lowe-azfne/">When the Constraint Moves, and Someone Is Chasing It</a>, the essay</li>
+    <li><a href="https://doi.org/10.5281/zenodo.23685344">The safe-fix gap</a>, a working paper with the model behind it (Zenodo)</li>
+  </ul>
+</main>
+
+<footer>
+  <p><strong>Ian Lowe</strong>. This is a personal research project. I work in product marketing at Axonius, a security company, but this isn't an Axonius survey and no product is mentioned in it.</p>
+  <p class="small">ORCID <a href="https://orcid.org/0009-0007-5622-4977">0009-0007-5622-4977</a></p>
+</footer>
+</body>
+</html>
